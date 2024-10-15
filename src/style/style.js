@@ -4,9 +4,14 @@ import { theme } from "../config/mui-config";
 
 export const LinkBtn = styled(Link)
 `color: ${theme.palette.primary.main};
+font-size: 18px;
 text-decoration: underline;
 &:hover{
-    color: ${theme.palette.primary[700]};
+  color: ${theme.palette.primary[700]};
+  }
+  @media (max-width: ${theme.breakpoints.values.md}px) {
+    font-size: 14px;
+  }
 `
 export const CardWrapper = styled.div`
   padding: 20px;

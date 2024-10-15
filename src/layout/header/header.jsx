@@ -10,14 +10,16 @@ export const Header = () => {
   return (
     <>
         <Container maxWidth="xs">
-            <Stack py={'31px'} direction={'row'} alignItems={'center'} gap={'61px'}>
+            <Stack py={{xs: '14px', md: '31px'}} direction={'row'} alignItems={'center'} gap={{xs: '33px', md: '61px'}}>
                 <Search />
-                <HeaderButton />
+                <Box display={{xs: 'none', md: 'block'}}>
+                    <HeaderButton />
+                </Box>
             </Stack>
         </Container>
         <Box bgcolor={theme.palette.grey.main}>
             <Container maxWidth="xs">
-                <Stack direction={'row'} justifyContent={'space-between'} py={'30px'}>
+                <Stack display={{xs: 'none', md: 'flex'}} direction={'row'} justifyContent={'space-between'} py={'30px'}>
                     {links.map((link) => (
                         <Link style={{ textDecoration: 'none' }} key={link.id} to={link.path}>
                             <Typography variant='body1'>{link.name}</Typography>

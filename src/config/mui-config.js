@@ -4,8 +4,8 @@ export const theme = createTheme({
   breakpoints: {
     values: {
       xs: 0,
-      sm: 300,
-      md: 900,
+      sm: 320,
+      md: 950,
       lg: 1200,
       xl: 1536,
     },
@@ -14,9 +14,12 @@ export const theme = createTheme({
     fontFamily: ["Ubuntu", "sans-serif"].join(","),
     h2: {
       fontWeight: 700,
-      fontSize: "40px",
+      fontSize: "18px",
       lineHeight: "130%",
       color: "#000",
+      "@media (min-width:900px)": {
+        fontSize: "40px",
+      },
     },
     body1: {
       fontWeight: 400,
