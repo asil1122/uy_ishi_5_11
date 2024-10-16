@@ -4,4 +4,5 @@ export const colors = {
   backgroundGrey: "#F2F2F2",
   backgroundNav: "#f9f9f9",
   inputBg: "#EFF3F6",
+  btnbg: '#fcfcfc'
 };

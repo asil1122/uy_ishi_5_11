@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import { theme } from "../config/mui-config";
+import { IconButton } from "@mui/material";
 
 export const LinkBtn = styled(Link)
 `color: ${theme.palette.primary.main};
@@ -41,3 +42,16 @@ export const Ul = styled.ul`
     padding: 0px;
     margin: 0px;
 `  
+
+export const LikeBtn = styled(IconButton)`
+  border: 1px solid ${theme.palette.grey[700]};
+  border-radius: 10px;
+  width: 51px;
+  height: 51px;
+  padding: 15px;
+  &:hover {
+    border: none;
+    color: #fff;
+    background-color: ${theme.palette.secondary.main};
+  }
+`;

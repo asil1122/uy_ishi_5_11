@@ -7,8 +7,8 @@ export const Footer = () => {
   return (
     <Box py={'40px'} bgcolor={theme.palette.grey.main}>
         <Container maxWidth="xs">
-            <Stack direction={{xs: 'column', md: 'row'}} gap={{xs: '24px', md: '64px'}}>
-                <Ul>
+            <Stack direction={{xs: 'column', md: 'row'}}  gap={{xs: '24px', md: '64px'}}>
+                <Ul >
                     <Li>
                         <Typography mb={{xs: '16px', md: '24px'}} fontSize={{ xs: '14px', md: '18px'}} variant='h2'>Каталог товаров</Typography>
                         <Typography variant='body2'>Ковры</Typography>

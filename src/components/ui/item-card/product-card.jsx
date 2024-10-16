@@ -1,6 +1,12 @@
 import { Box, IconButton, Rating, Stack, Typography } from "@mui/material"
 import { CardWrapper, NewCardBadge } from "../../../style/style.js"
 import { HeartIcon } from "../../../assets/icons/heart-icon"
+import { Link } from "react-router-dom"
+import styled from "@emotion/styled"
+
+const LinkBtn = styled(Link)`
+    text-decoration: none;
+`
 
 export const ProductCard = ({
     id,
@@ -24,9 +30,11 @@ export const ProductCard = ({
             <Box mb={'20px'} textAlign={'center'}>
                 <img src={img} alt="img" />
             </Box>
-            <Typography mb={'8px'} fontWeight={500} variant="body1">
-                {title}
-            </Typography>
+            <LinkBtn to={`/detail/${id}`}>
+                <Typography mb={'8px'} fontWeight={500} variant="body1">
+                    {title}
+                </Typography>
+            </LinkBtn>
             <Typography mb={'8px'} variant="body2">
                 Размер: {size}
             </Typography>
